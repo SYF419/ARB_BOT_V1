@@ -88,7 +88,7 @@ if __name__ == "__main__":
             pnl_1 = pnl_call2(signal_positive_ticker)
             pnl_2 = pnl_call2(signal_negative_ticker)
             pnl_3 = round(pnl_2 + pnl_1, 2)
-            pnl_4 = round(pnl_3 / tradeable_capital_usdt * 10, 4)*100
+            pnl_4 = round(pnl_3 / tradeable_capital_usdt, 4)*100
             print(pnl_3, pnl_4)
             # if pnl_3 >= 5:
             #     kill_switch = 2
